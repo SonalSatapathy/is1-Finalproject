@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TinyDrones</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+
+  <header>
+    <div class="flexbar">
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About page</a>
+        <a href="articles.html">Articles page</a>
+        <a href="contacts.html">Contacts page</a>
+      </nav>
+      <div class="logo">T/D</div>
+    </div>
+  </header>
+<h1>Tiny Drones</h1>
+
+
+  <main>
+    <h1>Customization</h1>
+    <div class="title-underline"></div>
+
+    <section class="intro-section">
+      <div class="intro-text">
+        <p>Customize your drone!</p>
+      </div>
+
+      <div class="options">
+        <p>Choose your options:</p>
+        <ul>
+          <li>Color</li>
+          <li>Camera type</li>
+          <li>Speed mode</li>
+          <li>Battery size</li>
+        </ul>
+        <label for="drone-select">Select model:</label><br>
+        <select id="drone-select">
+          <option>Standard</option>
+          <option>Pro</option>
+          <option>Ultra</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="bottom-section">
+      <!-- three image panels -->
+      <div class="image-row">
+        <div class="image-column">
+          <div class="arrow">⌄</div>
+          <div class="img-box">
+            <img src="images/red.png">
+          </div>
+        </div>
+        <div class="image-column">
+          <div class="arrow">⌄</div>
+          <div class="img-box">
+            <img src="images/blue.png">
+          </div>
+        </div>
+        <div class="image-column">
+          <div class="arrow">⌄</div>
+          <div class="img-box">
+            <img src="images/yellow.png">
+          </div>
+        </div>
+      </div>
+
+      <!-- side panel: more info, links, submit -->
+      <div class="side-panel">
+        <div class="more-info">
+          
+          <span>More info on drones</span>
+          <span class="arrow-right">➤</span>
+        </div>
+
+        <form action="#" method="post">
+  <label for="drone-color" style="font-size: 22px;">Choose a drone color:</label><br><br>
+
+  <select id="drone-color" name="drone-color" style="padding: 6px; font-size: 16px;">
+    <option value="">-- Select a color --</option>
+    <option value="Red">Red</option>
+    <option value="Blue">Blue</option>
+    <option value="Black">Black</option>
+    <option value="White">White</option>
+    <option value="Silver">Silver</option>
+    <option value="Custom">Custom Color</option>
+  </select>
+
+  <br><br>
+  <button type="submit" style="padding: 8px 20px; font-size: 16px;">Submit</button>
+</form>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
