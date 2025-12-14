@@ -20,7 +20,7 @@
 
  body {
       margin: 0;
-      font-family: "Times New Roman", serif;
+      font-family: 'Alkalami', serif;
       background-image: url("images/background.jpg");
       background-size: cover;        /* makes it fill the page */
   background-repeat: no-repeat;  /* removes tiling */
@@ -52,6 +52,27 @@
       font-size: 1em;
       margin-right: 50%;
     }
+
+  .image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.image-grid img {
+  width: 20em;
+  height: 16em;
+   object-fit: cover;
+  border: 2px solid #000;
+  border-radius: 15px;
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.25);
+}
+
+.path {
+  width: 70em;
+  height: 50em;
+}
 
     .image {
       width: 60em;
@@ -238,6 +259,83 @@
       border-bottom: none;
     }
 
+    form {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px 40px;
+  background: #71B5B5;
+  border: 2px solid #aac7ff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+  font-family: "Times New Roman", serif;
+}
+
+/* FORM TITLE */
+form h2 {
+  text-align: center;
+  margin-top: 0;
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-decoration: underline;
+}
+
+/* EACH ROW HOLDS LABEL + INPUT */
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* LABEL STYLE */
+.form-row label {
+  width: 150px;           /* label width */
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+/* INPUT + TEXTAREA STYLE */
+.form-row input[type="text"],
+.form-row input[type="tel"],
+.form-row input[type="email"],
+.form-row textarea {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #7fa3d9;
+  border-radius: 6px;
+  background: #f5f9ff;
+  transition: 0.25s ease-in-out;
+}
+
+/* FOCUS EFFECT */
+.form-row input:focus,
+.form-row textarea:focus {
+  outline: none;
+  border-color: #4b76c3;
+  box-shadow: 0 0 6px rgba(75,118,195,0.35);
+  background: #ffffff;
+}
+
+/* SUBMIT BUTTON */
+input[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  font-size: 20px;
+  background: #4b76c3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background: #355a99;
+}
+
+
     .submit-area {
       padding: 15px;
       text-align: right;
@@ -248,3 +346,37 @@
       font-size: 18px;
       cursor: pointer;
     }
+
+    .credibility {
+  margin-top: 50px;
+  padding: 25px 40px;
+  background: #86BBBB;
+  border-top: 2px solid #aac7ff;
+  font-size: 18px;
+  text-align: center;
+  color: #1a2a4d;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
